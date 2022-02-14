@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "522157146881",
+    "project_id": "trip-me-d76bb",
+    "storage_bucket": "trip-me-d76bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522157146881:android:5bc4fb4d858ddee1789100",
+        "android_client_info": {
+          "package_name": "com.example.tripmei"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "522157146881-3hb504s68pdmpqqhr1k0lbu98j9hufca.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmTGtAHoXa300RsOS6ykoBhKwB6rLIRGg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "522157146881-3hb504s68pdmpqqhr1k0lbu98j9hufca.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

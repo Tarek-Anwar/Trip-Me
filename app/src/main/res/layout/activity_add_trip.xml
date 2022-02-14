@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTripActivity">
+
+
+    <EditText
+        android:id="@+id/txt_Trip_Name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="48dp"
+        android:drawableLeft="@drawable/ic_baseline_event_24"
+        android:ems="10"
+        android:fontFamily="@font/aladin"
+        android:gravity="center"
+        android:hint="@string/tripnamw"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/txt_StartPoint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/add_location"
+        android:ems="10"
+        android:fontFamily="@font/aladin"
+        android:gravity="center"
+        android:hint="@string/startPoint"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Trip_Name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_Trip_Name"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Trip_Name" />
+
+    <EditText
+        android:id="@+id/txt_EndPoint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/add_location"
+        android:ems="10"
+        android:fontFamily="@font/aladin"
+        android:gravity="center"
+        android:hint="@string/endPoint"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Trip_Name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_Trip_Name"
+        app:layout_constraintTop_toBottomOf="@+id/txt_StartPoint" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/addTrip"
+        android:textColor="#ff03dac5"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_Trip_Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:drawableBottom="@drawable/ic_baseline_access_time_24"
+        android:fontFamily="@font/aladin"
+        android:gravity="center"
+        android:hint="@string/selectTime"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txt_EndPoint"
+        app:layout_constraintTop_toBottomOf="@+id/txt_EndPoint" />
+
+    <TextView
+        android:id="@+id/txt_view_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/aladin"
+        android:textColor="#ff03dac5"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Time"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="@+id/txt_Time"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Time" />
+
+    <TextView
+        android:id="@+id/txt_view_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/aladin"
+        android:textColor="#ff03dac5"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Date"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/txt_Date"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Date" />
+
+    <TextView
+        android:id="@+id/txt_Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:drawableBottom="@drawable/ic_baseline_date_range_24"
+        android:fontFamily="@font/aladin"
+        android:hint="@string/selectDate"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txt_EndPoint"
+        app:layout_constraintTop_toBottomOf="@+id/txt_EndPoint" />
+
+    <Spinner
+        android:id="@+id/spin_Repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#ff03dac5"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Time"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="@+id/txt_Time"
+        app:layout_constraintTop_toBottomOf="@+id/txt_view_time"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/spin_ways"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#ff03dac5"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Date"
+        app:layout_constraintStart_toStartOf="@+id/txt_Date"
+        app:layout_constraintTop_toBottomOf="@+id/txt_view_date"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spin_ways"
+        app:layout_constraintVertical_bias="0.828" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
